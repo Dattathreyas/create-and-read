@@ -1,0 +1,43 @@
+<h1 style="text-align:center;">Show all Users</h1>
+
+<style>
+
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table>
+    <tr>
+        <td style="background:palevioletred">Numbers</td>
+        <td style="background:palevioletred">First Name</td>
+        <td style="background:palevioletred">Second Name</td>
+    </tr>
+        <%  for(var i=0; i<formUsers.length; i++) {  %>
+
+<tr>
+    <td><ol></ol></td>
+    <td><%= formUsers[i].firstName %>  </td
+    <td> <%= formUsers[i].secondName %> </td>
+    <td><button>Delete</button></td>
+    <td><a href="#"><button>Update</button></a></td>
+        </tr>
+<%      }  %>
+
+
+
+    </tr>
+</table>
